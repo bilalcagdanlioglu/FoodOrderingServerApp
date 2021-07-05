@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:background="@color/primaryDarkColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo2"
+            android:layout_margin="3dp"/>
+
+        <EditText
+            android:hint="Telefon numarası giriniz"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_phone"
+            android:id="@+id/edtPhone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:layout_margin="3dp"
+            android:text="4443322"/>
+
+        <EditText
+            android:hint="Şifre giriniz"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_lock"
+            android:id="@+id/edtPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:layout_margin="3dp"
+            android:text="1234"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_margin="3dp"
+            android:id="@id/btnSignIn" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
